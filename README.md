@@ -1,6 +1,7 @@
 <p align="center">
 
 **Jellystat** is a free and open source Statistics App for Jellyfin! (This project is still in development - expect some weirdness)
+The reason I forked this project is to fix the backup feature on Unraid. 
 
 ## Current Features
 
