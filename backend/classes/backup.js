@@ -131,6 +131,7 @@ async function backup(refLog) {
 
     fileData = fileData.sort((a, b) => new Date(b.datecreated) - new Date(a.datecreated)).slice(5);
 
+    /*
     for (var oldBackup of fileData) {
       const oldBackupFile = path.join(__dirname, "..", backupfolder, oldBackup.name);
 
@@ -147,8 +148,8 @@ async function backup(refLog) {
       deleteCount += 1;
       refLog.logData.push({ color: "yellow", Message: `${oldBackupFile} has been deleted.` });
     }
-
-    refLog.logData.push({ color: "lawngreen", Message: deleteCount + " backups removed." });
+*/
+    refLog.logData.push({ color: "lawngreen", Message: deleteCount + "No backup has been removed." });
   } catch (error) {
     console.log(error);
     refLog.logData.push({ color: "red", Message: "Backup Failed: " + error });
